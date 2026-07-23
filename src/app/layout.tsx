@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return createElement(
     "html",
-    { lang: "en" },
+    { lang: "en", "data-scroll-behavior": "smooth" },
     createElement(
       "body",
       { className: `${instrumentSans.variable} ${archivo.variable}` },

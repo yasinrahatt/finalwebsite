@@ -11,20 +11,20 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="bg-ink text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[1fr_auto] lg:py-16">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:gap-10 sm:px-8 sm:py-12 lg:grid-cols-[1fr_auto] lg:py-16">
         <div>
           <Link href="/" className="text-2xl font-black">
             Yasin Rahat
           </Link>
-          <p className="mt-5 max-w-xl text-base leading-8 text-white/65">
-            Academic profile: research on digital propaganda, political
-            communication, student mobility, education access, and AI systems
-            for public decision-making.
+          <p className="mt-4 max-w-xl text-sm leading-7 text-white/65 sm:mt-5 sm:text-base sm:leading-8">
+            Research on digital propaganda, political communication, student
+            mobility, education access, and AI systems for public
+            decision-making.
           </p>
         </div>
         <nav
           aria-label="Footer navigation"
-          className="grid gap-3 text-base text-white/70 sm:grid-cols-2"
+          className="grid grid-cols-2 gap-3 text-sm text-white/70 sm:text-base"
         >
           {footerLinks.map((link) => (
             <Link

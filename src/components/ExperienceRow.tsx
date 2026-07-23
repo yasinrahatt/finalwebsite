@@ -7,23 +7,25 @@ type ExperienceRowProps = {
 
 export function ExperienceRow({ item }: ExperienceRowProps) {
   return (
-    <article className="border-b border-black/10 py-7 last:border-b-0">
-      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
-        <h3 className="text-xl font-black leading-tight text-ink sm:text-2xl">
+    <article className="border-b border-black/10 py-6 last:border-b-0 sm:py-7">
+      <div className="flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:justify-between sm:gap-x-4 sm:gap-y-2">
+        <h3 className="text-lg font-black leading-snug text-ink sm:text-2xl sm:leading-tight">
           {item.role}
         </h3>
-        <p className="text-sm font-bold text-neutral-500">{item.period}</p>
+        <p className="shrink-0 text-sm font-bold text-neutral-500">
+          {item.period}
+        </p>
       </div>
-      <p className="mt-2 text-base font-medium text-neutral-700">
+      <p className="mt-2 break-words text-sm font-medium leading-6 text-neutral-700 sm:text-base sm:leading-7">
         {item.organizationUrl ? (
           <a
             href={item.organizationUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 transition hover:text-accent"
+            className="inline items-center gap-1.5 transition hover:text-accent"
           >
             {item.organization}
-            <ExternalLink size={14} />
+            <ExternalLink size={14} className="ml-1 inline align-text-bottom" />
           </a>
         ) : (
           item.organization
@@ -31,7 +33,7 @@ export function ExperienceRow({ item }: ExperienceRowProps) {
         <span className="text-neutral-400"> · </span>
         {item.location}
       </p>
-      <p className="mt-3 max-w-3xl text-base leading-7 text-neutral-600">
+      <p className="mt-3 max-w-3xl text-sm leading-7 text-neutral-600 sm:text-base">
         {item.description}
       </p>
     </article>

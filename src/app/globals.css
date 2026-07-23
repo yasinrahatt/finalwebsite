@@ -14,10 +14,12 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: #fffdf8;
   color: #050505;
   font-family: var(--font-sans), "Helvetica Neue", Helvetica, ui-sans-serif,
@@ -33,6 +35,12 @@ h3,
 .brand-display {
   font-family: var(--font-display), var(--font-sans), "Helvetica Neue",
     Helvetica, ui-sans-serif, system-ui, sans-serif;
+  overflow-wrap: anywhere;
+}
+
+p,
+li {
+  overflow-wrap: break-word;
 }
 
 a {
