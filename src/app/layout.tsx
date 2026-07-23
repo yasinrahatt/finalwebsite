@@ -19,13 +19,13 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "Yasin Rahat’s Memo",
+  title: "Yasin Rahat — Academic Profile",
   description:
-    "A public notebook on study abroad, thoughts about society and the world, AI, migration, founder life, and travel.",
+    "Research on digital propaganda, political communication, student mobility, education access, and AI systems for public decision-making.",
   openGraph: {
-    title: "Yasin Rahat’s Memo",
+    title: "Yasin Rahat — Academic Profile",
     description:
-      "A public notebook on study abroad, thoughts about society and the world, AI, migration, founder life, and travel.",
+      "Research on digital propaganda, political communication, student mobility, education access, and AI systems for public decision-making.",
     type: "website",
   },
 };

@@ -3,9 +3,9 @@ import { Mail } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Writing", href: "/writing" },
-  { label: "Research Notes", href: "/archive" },
+  { label: "Academic Experience", href: "/experience" },
+  { label: "Writing Library", href: "/documents" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Header() {

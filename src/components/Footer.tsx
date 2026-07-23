@@ -2,14 +2,10 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 
 const footerLinks = [
-  { label: "Writing", href: "/writing" },
-  { label: "Founder Story", href: "/#founder-story" },
-  { label: "Travel Stories", href: "/#travel-stories" },
-  { label: "Podcast", href: "/podcast" },
-  { label: "Research", href: "/archive" },
-  { label: "Academic Profile", href: "/academic" },
-  { label: "Contact", href: "mailto:2rahatyasin@gmail.com" },
-  { label: "About", href: "/about" },
+  { label: "Home", href: "/" },
+  { label: "Academic Experience", href: "/experience" },
+  { label: "Writing Library", href: "/documents" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Footer() {
@@ -21,9 +17,9 @@ export function Footer() {
             Yasin Rahat
           </Link>
           <p className="mt-5 max-w-xl text-base leading-8 text-white/65">
-            Writing, founder notes, podcast conversations, thought notes, and
-            travel stories about study abroad, borders, power, AI, and
-            opportunity.
+            Academic profile: research on digital propaganda, political
+            communication, student mobility, education access, and AI systems
+            for public decision-making.
           </p>
         </div>
         <nav
